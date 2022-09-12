@@ -2,15 +2,15 @@ import profile from "./images/profile-picture.png";
 
 export default function About() {
   return (
-    <div className="flex justify-center items-center xs:flex-col md:flex-row p-5">
+    <div id="about" className="flex justify-center items-center xs:flex-col md:flex-row p-5">
       <div className="mb-4 p-5">
         <img
           src={profile}
-          className="object-cover w-72	rounded-full"
+          className="object-scale-down w-72	rounded-full"
           alt="Profile"
         />
       </div>
-      <div className="bg-blue-200  shadow-lg shadow-blue-300 p-5 rounded-lg w-[60%]">
+      <div className="bg-blue-200 shadow-lg shadow-blue-300 p-5 rounded-lg w-[60%]">
         <strong>About Me</strong>
         <p>
           Full-stack web developer with strong teamwork and organisational

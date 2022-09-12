@@ -6,12 +6,10 @@ import Technologies from "./Technologies";
 export default function App() {
   return (
     <section>
-      <div>
-        <Header />
-      </div>
+      <Header />
       <Navbar />
-      <About />
-      <Technologies />
+      <About  />
+      <Technologies  />
     </section>
   );
 }

@@ -13,7 +13,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <nav className=" sticky top-0 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <button
           data-collapse-toggle="navbar-default"
@@ -79,7 +79,7 @@ export default function Navbar() {
             >
               <li>
                 <a
-                  href="#"
+                  href="#home"
                   className="block 
                 py-2 
                 pr-4 
@@ -98,7 +98,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   className="block 
                 py-2 
                 pr-4 
@@ -121,7 +121,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="#<Technologies/>"
+                  href="#technologies"
                   className="block 
                 py-2 
                 pr-4 

@@ -5,8 +5,8 @@ import tailwind from "./images/tailwindcss-mark.79614a5f61617ba49a0891494521226b
 
 export default function Technologies() {
   return (
-    <div className="flex items-center flex-col">
-      <div className="flex text-2xl">
+    <div id="technologies" className="flex items-center flex-col">
+      <div className="flex text-2xl p-5">
         <h1>Technologies</h1>
       </div>
     <div className="flex flex-wrap justify-center bg-blue-200 shadow-lg shadow-blue-300 rounded-lg p-5 w-[80%]">
