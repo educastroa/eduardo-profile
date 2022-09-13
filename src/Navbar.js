@@ -166,7 +166,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   className="block 
                 py-2 
                 pr-4 

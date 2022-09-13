@@ -2,9 +2,9 @@ import JobDepot from "./images/JobSearch.png";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col items-center p-20">
+    <div id="projects" className="flex flex-col items-center p-20">
       <h1 className="text-2xl p-10">Projects</h1>
-    <div id="projects" className="flex items-center bg-blue-200 shadow-lg shadow-blue-300 flex-col py-10">
+    <div  className="flex items-center bg-blue-200 shadow-lg shadow-blue-300 flex-col py-10">
       
       
       <div className="flex justify-center py-10">
