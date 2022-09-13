@@ -1,22 +1,21 @@
-// import axios from "axios";
-// import { useState } from "react";
+import axios from "axios";
+import { useState } from "react";
 
 export default function Contact() {
-  
+  const handleChange = (event) => {
+    const name = event.target.id;
+    const value = event.target.value;
+    setInputs((values) => ({ ...values, [name]: value }));
+  };
 
-  // const handleChange = (event) => {
-  //   const name = event.target.id;
-  //   const value = event.target.value;
-  //   setInputs((values) => ({ ...values, [name]: value }));
-  // };
-
-  // const sendEmail = (payload) => axios.post('https://api.emailjs.com/api/v1.0/email/send', payload)
+  const sendEmail = (payload) =>
+    axios.post("https://api.emailjs.com/api/v1.0/email/send", payload);
 
   return (
-    <div id='contact' className="flex flex-col items-center p-10">
+    <div id="contact" className="flex flex-col items-center p-10">
       <h1 className="text-2xl p-10">Contact</h1>
       <div className="flex justify-center bg-blue-200 shadow-lg shadow-blue-300 rounded-lg p-5 w-[80%]">
-        <form className="w-full max-w-lg">
+        <form className="w-full max-w-lg" onSubmit={() => sendEmail(data)}>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
@@ -27,7 +26,8 @@ export default function Contact() {
               </label>
               <input
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-first-name"
+                onChange={handleChange}
+                id="from_first_name"
                 type="text"
                 required
               />
@@ -41,7 +41,8 @@ export default function Contact() {
               </label>
               <input
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-last-name"
+                onChange={handleChange}
+                id="from_last_name"
                 type="text"
                 required
               />
@@ -57,7 +58,8 @@ export default function Contact() {
               </label>
               <input
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="email"
+                onChange={handleChange}
+                id="reply_to"
                 type="email"
                 required
               />
@@ -73,6 +75,7 @@ export default function Contact() {
               </label>
               <textarea
                 className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                onChange={handleChange}
                 id="message"
                 required
               ></textarea>
