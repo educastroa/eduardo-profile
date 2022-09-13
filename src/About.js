@@ -2,7 +2,7 @@ import profile from "./images/profile-picture.png";
 
 export default function About() {
   return (
-    <div id="about" className="flex justify-center items-center xs:flex-col md:flex-row p-5">
+    <div id="about" className="flex justify-center items-center xs:flex-col md:flex-row py-10">
       <div className="mb-4 p-5">
         <img
           src={profile}

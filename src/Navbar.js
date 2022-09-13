@@ -143,7 +143,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#projects"
                   className="block 
                 py-2 
                 pr-4 
