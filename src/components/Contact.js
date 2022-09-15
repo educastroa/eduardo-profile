@@ -2,19 +2,28 @@ import axios from "axios";
 import { useState } from "react";
 
 export default function Contact() {
+  const [inputs, setInputs] = useState({})
+  const data = {
+    service_id: 'service_nuom66y',
+    template_id: 'template_nlhivt7',
+    user_id: '-DtVuch8yNESRcMkA',
+    template_params: inputs
+  }
+
+
+
   const handleChange = (event) => {
     const name = event.target.id;
     const value = event.target.value;
-    setInputs((values) => ({ ...values, [name]: value }));
+    setInputs((values) => ({ ...values,  [name] : value }));
   };
 
-  const sendEmail = (payload) =>
-    axios.post("https://api.emailjs.com/api/v1.0/email/send", payload);
+  const sendEmail = (payload) => axios.post('https://api.emailjs.com/api/v1.0/email/send', payload)
 
   return (
-    <div id="contact" className="flex flex-col items-center p-10">
+    <div id='contact' className="flex flex-col items-center p-10">
       <h1 className="text-2xl p-10">Contact</h1>
-      <div className="flex justify-center bg-blue-200 shadow-lg shadow-blue-300 rounded-lg p-5 w-[80%]">
+      <div className="flex justify-center bg-blue-200 shadow-lg shadow-blue-300 rounded-lg p-5 w-full">
         <form className="w-full max-w-lg" onSubmit={() => sendEmail(data)}>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -84,7 +93,7 @@ export default function Contact() {
           <div className="md:flex md:items-center">
             <div className="md:w-1/3">
               <button
-                className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                className="shadow bg-blue-400 hover:bg-blue-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                 type="submit"
               >
                 Send

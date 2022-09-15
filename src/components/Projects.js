@@ -1,4 +1,4 @@
-import JobDepot from "./images/JobSearch.png";
+import JobDepot from "../images/JobSearch.png";
 
 export default function Projects() {
   return (

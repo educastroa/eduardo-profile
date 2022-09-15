@@ -1,4 +1,4 @@
-import profile from "./images/profile-picture.png";
+import profile from "../images/profile-picture.png";
 
 export default function About() {
   return (

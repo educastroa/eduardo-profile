@@ -1,15 +1,15 @@
-import Header from "./Header";
-import Navbar from "./Navbar";
-import About from "./About";
-import Technologies from "./Technologies";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import Header from "./components/Header";
+import About from "./components/About";
+import Technologies from "./components/Technologies";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
     <section>
       <Header />
-      <Navbar />
+      <Navbar/>
       <About />
       <Technologies />
       <Projects />
