@@ -1,8 +1,6 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
-
 /** @type {import('tailwindcss').Config} */
-
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -15,26 +13,6 @@ module.exports = {
     screens: {
       xs: "375px",
       ...defaultTheme.screens,
-    },
-    colors: {
-      transparent: "transparent",
-      primary: "#B1BEE6",
-      secondary: "#252426",
-      white: "#ffffff",
-      black: "#000000",
-      yellow: "#f9e71c",
-      lila: "#e6e5ec",
-      "grey-10": "#6c6b6d",
-      "grey-20": "#7c7c7c",
-      "grey-30": "#919091",
-      "grey-40": "#929293",
-      "grey-50": "#f4f3f8",
-      "grey-60": "#edebf6",
-      "grey-70": "#d8d8d8",
-      "hero-gradient-from": "rgba(49, 59, 153, 0.65)",
-      "hero-gradient-to": "rgba(65, 47, 144, 0.93)",
-      "blog-gradient-from": "#8f9098",
-      "blog-gradient-to": "#222222"
     },
     container: {
       center: true,
@@ -52,6 +30,26 @@ module.exports = {
       16: "4rem",
     },
     extend: {
+      colors: {
+        transparent: "transparent",
+        primary: "#4357FF",
+        secondary: "#828899",
+        white: "#ffffff",
+        black: "#000000",
+        yellow: "#f9e71c",
+        lila: "#e6e5ec",
+        "grey-10": "#6c6b6d",
+        "grey-20": "#7c7c7c",
+        "grey-30": "#919091",
+        "grey-40": "#929293",
+        "grey-50": "#f4f3f8",
+        "grey-60": "#edebf6",
+        "grey-70": "#d8d8d8",
+        "hero-gradient-from": "rgba(67, 87, 255, 0.75)",
+        "hero-gradient-to": "rgba(43, 53, 148, 0.73)",
+        "blog-gradient-from": "#8f9098",
+        "blog-gradient-to": "#222222",
+      },
       backgroundImage: {
         header: "url('./images/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg')",
         profile: "url('./images/profile-picture.png')",
@@ -105,6 +103,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-  ],
+  plugins: [],
 };

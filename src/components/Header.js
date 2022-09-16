@@ -1,6 +1,6 @@
 import profile from "../images/profile-picture.png";
 import { AiOutlineRight } from 'react-icons/ai'
-import { FaFacebookSquare, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 
 
@@ -27,19 +27,13 @@ export default function Header() {
           </div>
           <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
             <a href="/">
-              <FaFacebookSquare className="text-2xl text-white hover:text-yellow"/>
-            </a>
-            <a href="/" className="pl-4">
               <FaGithub className="text-2xl text-white hover:text-yellow"/>
             </a>
             <a href="/" className="pl-4">
               <FaLinkedin className="text-2xl text-white hover:text-yellow"/>
             </a>
             <a href="#contact" className="pl-4">
-              <FaEnvelope className="bx bxl-linkedin text-2xl text-white hover:text-yellow"/>
-            </a>
-            <a href="/" className="pl-4">
-              <i className="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
+              <FaEnvelope className="text-2xl text-white hover:text-yellow"/>
             </a>
           </div>
         </div>

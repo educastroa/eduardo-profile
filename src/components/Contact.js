@@ -1,8 +1,14 @@
 import axios from "axios";
 import { useState } from "react";
+import ContactModal from "./ContactModal";
 
 export default function Contact() {
   const [inputs, setInputs] = useState({})
+  const [messageStatus, setMessageStatus] = useState({
+    reqSent: false,
+    response: ''
+  })
+
   const data = {
     service_id: 'service_nuom66y',
     template_id: 'template_nlhivt7',
@@ -17,14 +23,25 @@ export default function Contact() {
     const value = event.target.value;
     setInputs((values) => ({ ...values,  [name] : value }));
   };
+  
+  const sendEmail = (payload) => 
+  axios.post('https://api.emailjs.com/api/v1.0/email/send', payload)
+  .then(res => setMessageStatus({reqSent: true, response: res.data}))
+  .catch(error => setMessageStatus({reqSent: true, response: error}))
 
-  const sendEmail = (payload) => axios.post('https://api.emailjs.com/api/v1.0/email/send', payload)
+
+  const handleSubmit = (event, apiData) => {
+    event.preventDefault();
+    sendEmail(apiData)
+    setInputs({})
+  };
+    
 
   return (
     <div id='contact' className="flex flex-col items-center p-10">
       <h1 className="text-2xl p-10">Contact</h1>
       <div className="flex justify-center bg-blue-200 shadow-lg shadow-blue-300 rounded-lg p-5 w-full">
-        <form className="w-full max-w-lg" onSubmit={() => sendEmail(data)}>
+        <form className="w-full max-w-lg" onSubmit={(event) => handleSubmit(event, data)}>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
@@ -103,6 +120,10 @@ export default function Contact() {
           </div>
         </form>
       </div>
+      {messageStatus.reqSent ? 
+      <ContactModal
+      messageStatus={messageStatus}
+      /> : ""}
     </div>
   );
 }
