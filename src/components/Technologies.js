@@ -1,63 +1,52 @@
-import tailwind from "../images/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg";
-import javaScript from "../images/JavaScript-logo.png";
+import javascriptLogo from "../images/javascript-logo.png";
+import cssLogo from "../images/css-logo.png";
+import htmlLogo from "../images/html-logo.png";
+import tailwindlLogo from "../images/tailwind-logo.png";
+import jqueryLogo from "../images/jquery-logo.png";
+import reactLogo from "../images/react-logo.png";
+import nodeLogo from "../images/node-logo.png";
+import sqlLogo from "../images/sql-logo.png";
+import rubyLogo from "../images/ruby-logo.png";
+import bootstrapLogo from "../images/bootstrap-logo.png";
 
 export default function Technologies() {
+  const logoImages = [
+    { name: "React.js", file: reactLogo },
+    { name: "JavaScript", file: javascriptLogo },
+    { name: "JQuery", file: jqueryLogo },
+    { name: "Node.js", file: nodeLogo },
+    { name: "Ruby", file: rubyLogo },
+    { name: "SQL", file: sqlLogo },
+    { name: "HTML", file: htmlLogo },
+    { name: "CSS", file: cssLogo },
+    { name: "Tailwind", file: tailwindlLogo },
+    { name: "Bootstrap", file: bootstrapLogo },
+  ];
+
   return (
-    <div id="technologies" className="flex items-center flex-col py-20">
-      <div className="text-2xl p-5">
-        <h1>Technologies</h1>
-      </div>
-      <div className="flex flex-wrap justify-center bg-blue-200 shadow-lg shadow-blue-300 rounded-lg p-5 w-full">
-        <img
-          className="object-scale-down w-48 p-5"
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-          alt="react"
-        />
-        <img
-          className="object-scale-down w-48 p-5"
-          src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-          alt="sql"
-        />
-        <img
-          src={tailwind}
-          className="object-scale-down w-48 p-5"
-          alt="tailwind"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg"
-          className="object-scale-down w-48 p-5"
-          alt="jquery"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-          className="object-scale-down w-48 p-5"
-          alt="css"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-          className="object-scale-down w-48 p-5"
-          alt="node"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg"
-          className="object-scale-down w-48 p-5"
-          alt="ruby"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
-          className="object-scale-down w-48 p-5"
-          alt="bootstrap"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-          className="object-scale-down w-48 p-5"
-          alt="html"
-        />
-        <img
-          src={javaScript}
-          className="object-scale-down w-48 p-5"
-          alt="html"
-        />
+    <div className="container py-16 md:py-20" id="services">
+      <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+        These are the technologies I work
+      </h2>
+
+      <div className="grid grid-cols-2 gap-6 pt-10 md:gap-10 md:pt-12 lg:grid-cols-5">
+        {logoImages.map((logo, i) => (
+          <div key={i} className="group rounded px-8 py-6 shadow hover:bg-primary">
+            <div className="mx-auto flex items-center justify-between h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div className="hidden group-hover:block">
+                <img src={logo.file} alt="react" />
+              </div>
+              <div className="block group-hover:hidden">
+                <img src={logo.file} alt="react" />
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                {logo.name}
+              </h3>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
