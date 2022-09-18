@@ -3,9 +3,14 @@ import { AiOutlineRight } from 'react-icons/ai'
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 
-
-
 export default function Header() {
+
+  const iconsData = [
+    { name: FaGithub, link: "/" },
+    { name: FaLinkedin, link: "/" },
+    { name: FaEnvelope, link: "/" },
+  ];
+
   return (
     <header id="home" className="bg-header relative bg-cover bg-center bg-no-repeat py-8">
       <div className="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat"> </div>
@@ -26,15 +31,14 @@ export default function Header() {
             </div>
           </div>
           <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-            <a href="/">
-              <FaGithub className="text-2xl text-white hover:text-yellow"/>
-            </a>
-            <a href="/" className="pl-4">
-              <FaLinkedin className="text-2xl text-white hover:text-yellow"/>
-            </a>
-            <a href="#contact" className="pl-4">
-              <FaEnvelope className="text-2xl text-white hover:text-yellow"/>
-            </a>
+          {iconsData.map((icon) => {
+                const Icon = icon.name;
+                return (
+                  <a href="/" className="pl-4">
+                    <Icon className="text-2xl text-white hover:text-yellow" />
+                  </a>
+                );
+              })}
           </div>
         </div>
       </div>
