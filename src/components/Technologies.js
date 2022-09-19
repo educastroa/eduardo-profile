@@ -24,7 +24,7 @@ export default function Technologies() {
   ];
 
   return (
-    <div className="container py-16 md:py-20" id="services">
+    <div className="container py-16 md:py-20" id="technologies">
       <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
         These are the technologies I work
       </h2>

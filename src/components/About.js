@@ -4,10 +4,10 @@ import { generateSocialIcons } from "../helpers";
 
 export default function About() {
   const skillData = [
-    { name: "React", level: "65%" },
-    { name: "Javascript", level: "90%" },
-    { name: "Jquery", level: "85%" },
-    { name: "HTML CSS", level: "75%" },
+    { name: "React", level: "75%" },
+    { name: "Javascript", level: "80%" },
+    { name: "Jquery", level: "70%" },
+    { name: "HTML CSS", level: "85%" }
   ];
 
   const iconsData = [
