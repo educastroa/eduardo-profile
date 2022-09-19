@@ -31,7 +31,7 @@ export default function Header() {
             </div>
           </div>
           <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-          {generateSocialIcons(iconsData)}
+          {generateSocialIcons(iconsData, 'white')}
           </div>
         </div>
       </div>

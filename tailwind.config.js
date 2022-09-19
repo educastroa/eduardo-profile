@@ -54,6 +54,7 @@ module.exports = {
       backgroundImage: {
         header: "url('./images/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg')",
         profile: "url('./images/profile-picture.png')",
+        experience: "url('./images/experience-bg.png')",
       },
       spacing: {
         13: "3.25rem",

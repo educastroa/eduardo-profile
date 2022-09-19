@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { AiOutlineRight } from "react-icons/ai";
+import { generateSocialIcons } from "../helpers";
 
 export default function About() {
   const skillData = [
@@ -44,14 +45,7 @@ export default function About() {
               </div>
             </div>
             <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-              {iconsData.map((icon, i) => {
-                const Icon = icon.name;
-                return (
-                  <a key={i} href="/" className="pl-4">
-                    <Icon className="text-2xl text-primary hover:text-yellow" />
-                  </a>
-                );
-              })}
+              {generateSocialIcons(iconsData, 'primary')}
             </div>
           </div>
         </div>
