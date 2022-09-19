@@ -1,7 +1,7 @@
+import { generateSocialIcons } from "../helpers";
 import profile from "../images/profile-picture.png";
 import { AiOutlineRight } from 'react-icons/ai'
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-
 
 export default function Header() {
 
@@ -31,14 +31,7 @@ export default function Header() {
             </div>
           </div>
           <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-          {iconsData.map((icon) => {
-                const Icon = icon.name;
-                return (
-                  <a href="/" className="pl-4">
-                    <Icon className="text-2xl text-white hover:text-yellow" />
-                  </a>
-                );
-              })}
+          {generateSocialIcons(iconsData)}
           </div>
         </div>
       </div>

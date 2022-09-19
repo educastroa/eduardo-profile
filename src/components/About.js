@@ -44,10 +44,10 @@ export default function About() {
               </div>
             </div>
             <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-              {iconsData.map((icon) => {
+              {iconsData.map((icon, i) => {
                 const Icon = icon.name;
                 return (
-                  <a href="/" className="pl-4">
+                  <a key={i} href="/" className="pl-4">
                     <Icon className="text-2xl text-primary hover:text-yellow" />
                   </a>
                 );
@@ -56,8 +56,8 @@ export default function About() {
           </div>
         </div>
         <div className="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
-          {skillData.map((skill) => (
-            <div>
+          {skillData.map((skill, i) => (
+            <div key={i}>
               <div className="flex items-end justify-between">
                 <h4 className="font-body font-semibold uppercase text-black">
                   {skill.name}
