@@ -1,12 +1,12 @@
-import jobDepot from "../images/JobSearch.png";
-import wikimaps from "../images/wikimaps.png";
+import wikimap from "../images/wikimap.png";
 import scheduler from "../images/scheduler.gif";
 import tinyapp from "../images/tinyapp.png";
+import jobdepot from "../images/jobdepot.png";
 
 export default function Projects() {
   const projectData = [
-    { name: "JobDepot", image: jobDepot },
-    { name: "Wikimaps", image: wikimaps },
+    { name: "JobDepot", image: jobdepot },
+    { name: "Wikimaps", image: wikimap },
     { name: "Scheduler", image: scheduler },
     { name: "Tinyapp", image: tinyapp },
   ];

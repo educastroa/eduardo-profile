@@ -26,13 +26,13 @@ export default function About() {
             I'm Eduardo Castro, a Web Developer
           </h4>
           <p className="pt-6 font-body leading-relaxed text-grey-20">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Full-stack web developer with strong teamwork and organisational
+            skills. Ability in optimising user interface, testing and data
+            retrieval to meet or exceed client needs. Solid Quality management
+            experience in the automotive industry. Highly analytical
+            problem-solving skills using methods to prevent errors, faults and
+            create workable solutions developed over years of experience working
+            in manufacturing and construction environment.
           </p>
           <div className="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
             <div className="flex items-center justify-center sm:justify-start">
