@@ -69,13 +69,9 @@ export default function ContactModal({ messageStatus, setMessageStatus }) {
                       >
                         {messageStatus.response !== "OK"
                           ? "Sorry. Something went wrong, please try again later."
-                          : "Thank you for yor message, I will get bak to you as soon as I can."}
+                          : "Thank you for yor message, I will get back to you as soon as I can."}
                       </Dialog.Title>
                       <div className="mt-2">
-                        <p className="text-sm text-gray-500">
-                          My apologies for the inconvinience. Please connect
-                          with me using other opition
-                        </p>
                       </div>
                     </div>
                   </div>
