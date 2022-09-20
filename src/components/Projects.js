@@ -5,10 +5,10 @@ import jobdepot from "../images/jobdepot.png";
 
 export default function Projects() {
   const projectData = [
-    { name: "JobDepot", image: jobdepot },
-    { name: "Wikimaps", image: wikimap },
-    { name: "Scheduler", image: scheduler },
-    { name: "Tinyapp", image: tinyapp },
+    { name: "JobDepot", image: jobdepot, link: 'https://github.com/educastroa/JobDepot'},
+    { name: "Wikimaps", image: wikimap, link: 'https://github.com/educastroa/wikimap'},
+    { name: "Scheduler", image: scheduler, link: 'https://github.com/educastroa/scheduler'},
+    { name: "Tinyapp", image: tinyapp, link: 'https://github.com/educastroa/tinyapp'},
   ];
 
   return (
@@ -23,8 +23,8 @@ export default function Projects() {
       <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
         {projectData.map((project, i) => (
           <a
-          key={i}
-            href="/"
+            key={i}
+            href={project.link}
             className="mx-auto transform transition-all hover:scale-105 md:mx-0"
           >
             <img
@@ -34,7 +34,6 @@ export default function Projects() {
             />
           </a>
         ))}
-        
       </div>
     </div>
   );

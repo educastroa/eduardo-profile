@@ -44,7 +44,8 @@ export default function Contact() {
       </h4>
       <div className="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
         <p className="font-body text-grey-10">
-          I would welcome a opportunity to discuss how my skills and experience can add value to your company.
+          I would welcome a opportunity to discuss how my skills and experience
+          can add value to your company.
         </p>
       </div>
       <form
@@ -95,93 +96,5 @@ export default function Contact() {
         ""
       )}
     </div>
-
-    // <div id='contact' classNameName="flex flex-col items-center p-10">
-    //   <h1 classNameName="text-2xl p-10">Contact</h1>
-    //   <div classNameName="flex justify-center bg-blue-200 shadow-lg shadow-blue-300 rounded-lg p-5 w-full">
-    //     <form classNameName="w-full max-w-lg" onSubmit={(event) => handleSubmit(event, data)}>
-    //       <div classNameName="flex flex-wrap -mx-3 mb-6">
-    //         <div classNameName="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-    //           <label
-    //             classNameName="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-    //             htmlFor="grid-first-name"
-    //           >
-    //             First Name
-    //           </label>
-    //           <input
-    //             classNameName="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-    //             onChange={handleChange}
-    //             id="from_first_name"
-    //             type="text"
-    //             required
-    //           />
-    //         </div>
-    //         <div classNameName="w-full md:w-1/2 px-3">
-    //           <label
-    //             classNameName="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-    //             htmlFor="grid-last-name"
-    //           >
-    //             Last Name
-    //           </label>
-    //           <input
-    //             classNameName="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-    //             onChange={handleChange}
-    //             id="from_last_name"
-    //             type="text"
-    //             required
-    //           />
-    //         </div>
-    //       </div>
-    //       <div classNameName="flex flex-wrap -mx-3 mb-6">
-    //         <div classNameName="w-full px-3">
-    //           <label
-    //             classNameName="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-    //             htmlFor="grid-password"
-    //           >
-    //             E-mail
-    //           </label>
-    //           <input
-    //             classNameName="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-    //             onChange={handleChange}
-    //             id="reply_to"
-    //             type="email"
-    //             required
-    //           />
-    //         </div>
-    //       </div>
-    //       <div classNameName="flex flex-wrap -mx-3 mb-6">
-    //         <div classNameName="w-full px-3">
-    //           <label
-    //             classNameName="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-    //             htmlFor="grid-password"
-    //           >
-    //             Message
-    //           </label>
-    //           <textarea
-    //             classNameName=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
-    //             onChange={handleChange}
-    //             id="message"
-    //             required
-    //           ></textarea>
-    //         </div>
-    //       </div>
-    //       <div classNameName="md:flex md:items-center">
-    //         <div classNameName="md:w-1/3">
-    //           <button
-    //             classNameName="shadow bg-blue-400 hover:bg-blue-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-    //             type="submit"
-    //           >
-    //             Send
-    //           </button>
-    //         </div>
-    //         <div classNameName="md:w-2/3"></div>
-    //       </div>
-    //     </form>
-    //   </div>
-    //   {messageStatus.reqSent ?
-    //   <ContactModal
-    //   messageStatus={messageStatus}
-    //   /> : ""}
-    // </div>
   );
 }

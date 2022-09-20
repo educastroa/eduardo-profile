@@ -1,9 +1,9 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export default function Navbar() {
-  const [selected, setSelected] = useState('Home');
+  const [selected, setSelected] = useState("Home");
 
   const navigation = [
     { name: "Home", href: "#home" },
@@ -14,13 +14,16 @@ export default function Navbar() {
     { name: "Contact", href: "#contact" },
   ];
 
- 
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
 
   return (
-    <Disclosure as="nav" className="w-full z-50 top-0 py-3 sm:py-5  absolute">
+    <Disclosure
+      id="navbar"
+      as="nav"
+      className="py-8 w-full z-50 top-0 py-3 sm:py-5 absolute"
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -30,9 +33,15 @@ export default function Navbar() {
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <AiOutlineClose className="block h-6 w-6" aria-hidden="true" />
+                    <AiOutlineClose
+                      className="block h-6 w-6"
+                      aria-hidden="true"
+                    />
                   ) : (
-                    <AiOutlineMenu className="block h-6 w-6" aria-hidden="true" />
+                    <AiOutlineMenu
+                      className="block h-6 w-6"
+                      aria-hidden="true"
+                    />
                   )}
                 </Disclosure.Button>
               </div>
@@ -50,7 +59,9 @@ export default function Navbar() {
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
-                        aria-current={item.name === selected ? "page" : undefined}
+                        aria-current={
+                          item.name === selected ? "page" : undefined
+                        }
                       >
                         {item.name}
                       </a>

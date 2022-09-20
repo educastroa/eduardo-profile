@@ -11,13 +11,13 @@ export default function App() {
   return (
     <section>
       <Header />
-      <Navbar/>
+      <Navbar />
       <About />
       <Technologies />
       <Projects />
-      <WorkExperience/>
-      <Contact/>
-      <Footer/>
+      <WorkExperience />
+      <Contact />
+      <Footer />
     </section>
   );
 }

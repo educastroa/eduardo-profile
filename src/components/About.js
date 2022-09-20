@@ -1,19 +1,13 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { AiOutlineRight } from "react-icons/ai";
 import { generateSocialIcons } from "../helpers";
+import { iconsData } from "../constants";
 
 export default function About() {
   const skillData = [
     { name: "React", level: "75%" },
     { name: "Javascript", level: "80%" },
     { name: "Jquery", level: "70%" },
-    { name: "HTML CSS", level: "85%" }
-  ];
-
-  const iconsData = [
-    { name: FaGithub, link: "/" },
-    { name: FaLinkedin, link: "/" },
-    { name: FaEnvelope, link: "/" },
+    { name: "HTML CSS", level: "85%" },
   ];
 
   return (
@@ -45,7 +39,7 @@ export default function About() {
               </div>
             </div>
             <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-              {generateSocialIcons(iconsData, 'primary')}
+              {generateSocialIcons(iconsData, "primary")}
             </div>
           </div>
         </div>

@@ -45,7 +45,7 @@ export default function WorkExperience() {
                     </span>
                     <div className="pt-2">
                       <span className="block font-body text-black">
-                        Responsable for continuous improvement in all cananadian
+                        Responsable for continuous improvement in all Cananadian
                         facilities by collecting and analysing data using state
                         of art technology
                       </span>
@@ -85,7 +85,9 @@ export default function WorkExperience() {
                     </span>
                     <div className="pt-2">
                       <span className="block font-body text-black">
-                        Led problem solving processes using the most advanced technics world wide ensuring collaboration between departments. 
+                        Led problem solving processes using the most advanced
+                        techniques world wide ensuring collaboration between
+                        departments
                       </span>
                     </div>
                   </div>
@@ -123,7 +125,9 @@ export default function WorkExperience() {
                     </span>
                     <div className="pt-2">
                       <span className="block font-body text-black">
-                      Managed construcion processes using creative solutions to meet project's deadline in the Athlets village for the olimpcs 2016
+                        Managed construcion processes using creative solutions
+                        to meet projects' deadline in the Athletes Village for
+                        the Olympics 2016
                       </span>
                     </div>
                   </div>

@@ -1,23 +1,28 @@
-import { Fragment, useRef, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
+import { Fragment, useRef, useState } from "react";
+import { Dialog, Transition } from "@headlessui/react";
 import { FaCheckCircle, FaExclamationTriangle } from "react-icons/fa";
 
-export default function ContactModal({messageStatus, setMessageStatus}) {
-  const [open, setOpen] = useState(true)
+export default function ContactModal({ messageStatus, setMessageStatus }) {
+  const [open, setOpen] = useState(true);
 
-  const cancelButtonRef = useRef(null)
+  const cancelButtonRef = useRef(null);
 
   const handleModal = () => {
-    setOpen(false)
+    setOpen(false);
     setMessageStatus({
       reqSent: false,
       response: "",
-    })
+    });
   };
 
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={setOpen}>
+      <Dialog
+        as="div"
+        className="relative z-10"
+        initialFocus={cancelButtonRef}
+        onClose={setOpen}
+      >
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -45,16 +50,31 @@ export default function ContactModal({messageStatus, setMessageStatus}) {
                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
                     <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                      {messageStatus.response !== 'OK' ? <FaExclamationTriangle className="h-6 w-6 text-red-600" aria-hidden="true" /> : <FaCheckCircle className="h-6 w-6 text-green-600" aria-hidden="true" />}
+                      {messageStatus.response !== "OK" ? (
+                        <FaExclamationTriangle
+                          className="h-6 w-6 text-red-600"
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        <FaCheckCircle
+                          className="h-6 w-6 text-green-600"
+                          aria-hidden="true"
+                        />
+                      )}
                     </div>
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                      <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
-                      {messageStatus.response !== 'OK' ? 'Sorry. Something went wrong, please try again later.' : 'Thank you for yor message, I will get bak to you as soon as I can.' }
+                      <Dialog.Title
+                        as="h3"
+                        className="text-lg font-medium leading-6 text-gray-900"
+                      >
+                        {messageStatus.response !== "OK"
+                          ? "Sorry. Something went wrong, please try again later."
+                          : "Thank you for yor message, I will get bak to you as soon as I can."}
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
-                          Are you sure you want to deactivate your account? All of your data will be permanently
-                          removed. This action cannot be undone.
+                          My apologies for the inconvinience. Please connect
+                          with me using other opition
                         </p>
                       </div>
                     </div>
@@ -75,5 +95,5 @@ export default function ContactModal({messageStatus, setMessageStatus}) {
         </div>
       </Dialog>
     </Transition.Root>
-  )
+  );
 }

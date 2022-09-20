@@ -1,12 +1,7 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { generateSocialIcons } from "../helpers";
+import { iconsData } from "../constants";
 
 export default function Footer() {
-  const iconsData = [
-    { name: FaGithub, link: "/" },
-    { name: FaLinkedin, link: "/" },
-    { name: FaEnvelope, link: "/" },
-  ];
 
   return (
     <div className="bg-primary">

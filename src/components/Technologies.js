@@ -30,7 +30,10 @@ export default function Technologies() {
       </h2>
       <div className="grid grid-cols-2 gap-6 pt-10 md:gap-10 md:pt-12 lg:grid-cols-5">
         {logoData.map((logo, i) => (
-          <div key={i} className="group rounded px-8 py-6 shadow hover:bg-primary">
+          <div
+            key={i}
+            className="group rounded px-8 py-6 shadow hover:bg-primary"
+          >
             <div className="mx-auto flex items-center justify-between h-24 w-24 text-center xl:h-28 xl:w-28">
               <div className="hidden group-hover:block">
                 <img src={logo.image} alt="react" />
