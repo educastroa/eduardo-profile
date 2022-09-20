@@ -125,7 +125,7 @@ export default function WorkExperience() {
                     </span>
                     <div className="pt-2">
                       <span className="block font-body text-black">
-                        Managed construcion processes using creative solutions
+                        Managed construction processes using creative solutions
                         to meet projects' deadline in the Athletes Village for
                         the Olympics 2016
                       </span>

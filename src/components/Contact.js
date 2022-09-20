@@ -45,7 +45,7 @@ export default function Contact() {
       <div className="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
         <p className="font-body text-grey-10">
           I would welcome a opportunity to discuss how my skills and experience
-          can add value to your company.
+          can add value to your company
         </p>
       </div>
       <form
