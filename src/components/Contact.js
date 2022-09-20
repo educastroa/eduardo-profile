@@ -12,7 +12,7 @@ export default function Contact() {
   const data = {
     service_id: "service_nuom66y",
     template_id: "template_nlhivt7",
-    // user_id: "-DtVuch8yNESRcMkA",
+    user_id: "-DtVuch8yNESRcMkA",
     template_params: inputs,
   };
 

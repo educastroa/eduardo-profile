@@ -32,7 +32,7 @@ export default function Header() {
                   <AiOutlineRight className="bx bx-chevron-right text-3xl text-yellow" />
                 </div>
               </div>
-              <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
+              <div className="flex items-center justify-center pt-5 pr-6 sm:justify-start sm:pt-0">
                 {generateSocialIcons(iconsData, "white")}
               </div>
             </div>
