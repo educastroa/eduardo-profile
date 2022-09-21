@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <div className="container py-16 md:py-20" id="projects">
       <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-        Check out my Projects
+        Check out my Portfolio
       </h2>
       <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
         Here's what I have done with the past

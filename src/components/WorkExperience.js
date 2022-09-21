@@ -45,7 +45,7 @@ export default function WorkExperience() {
                     </span>
                     <div className="pt-2">
                       <span className="block font-body text-black">
-                        Responsable for continuous improvement in all Cananadian
+                        Responsible for continuous improvement in all Canadian
                         facilities by collecting and analysing data using state
                         of art technology
                       </span>

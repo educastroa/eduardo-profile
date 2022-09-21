@@ -26,7 +26,7 @@ export default function Technologies() {
   return (
     <div className="container py-16 md:py-20" id="technologies">
       <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
-        These are the technologies I work
+        These are the technologies I work with
       </h2>
       <div className="grid grid-cols-2 gap-6 pt-10 md:gap-10 md:pt-12 lg:grid-cols-5">
         {logoData.map((logo, i) => (
