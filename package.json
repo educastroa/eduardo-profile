@@ -1,7 +1,6 @@
 {
   "name": "eduardo-website",
   "version": "0.1.0",
-  "homepage": "https://educastroa.github.io/eduardo-profile",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.1",
