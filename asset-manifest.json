@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/eduardo-profile/static/css/main.e4097bb6.css",
+    "main.js": "/eduardo-profile/static/js/main.ac610718.js",
+    "static/js/787.7752bf65.chunk.js": "/eduardo-profile/static/js/787.7752bf65.chunk.js",
+    "static/media/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg": "/eduardo-profile/static/media/shahadat-rahman-BfrQnKBulYQ-unsplash.ee4ba4f5c8af075bea39.jpg",
+    "static/media/wikimap.png": "/eduardo-profile/static/media/wikimap.cb8ae9f57f33fcd488da.png",
+    "static/media/scheduler.gif": "/eduardo-profile/static/media/scheduler.6e9d24a1154897dcb209.gif",
+    "static/media/profile-picture.png": "/eduardo-profile/static/media/profile-picture.24f271001d8bcaf47566.png",
+    "static/media/jobdepot.png": "/eduardo-profile/static/media/jobdepot.0f6ab5c68e5c56525f0d.png",
+    "static/media/sql-logo.png": "/eduardo-profile/static/media/sql-logo.85fb38d6773862e917f4.png",
+    "static/media/ruby-logo.png": "/eduardo-profile/static/media/ruby-logo.2bd8caf2962175216722.png",
+    "static/media/tinyapp.png": "/eduardo-profile/static/media/tinyapp.7e873da397cbfd16a97f.png",
+    "static/media/jquery-logo.png": "/eduardo-profile/static/media/jquery-logo.c5ce08ac9f29f04a4bb6.png",
+    "static/media/bootstrap-logo.png": "/eduardo-profile/static/media/bootstrap-logo.87b2b41e1d703d5fc6c1.png",
+    "static/media/arcelor-logo.png": "/eduardo-profile/static/media/arcelor-logo.58be2141ff46b9da05e1.png",
+    "static/media/node-logo.png": "/eduardo-profile/static/media/node-logo.20deb7f0a49714f0dfd2.png",
+    "static/media/react-logo.png": "/eduardo-profile/static/media/react-logo.b37f0a4b7134b3c99d6e.png",
+    "static/media/html-logo.png": "/eduardo-profile/static/media/html-logo.397540dec969b31fd37c.png",
+    "static/media/experience-bg.png": "/eduardo-profile/static/media/experience-bg.c804ac871301b6e4c7fc.png",
+    "static/media/css-logo.png": "/eduardo-profile/static/media/css-logo.57feb85c31eec0ff2e1a.png",
+    "index.html": "/eduardo-profile/index.html",
+    "main.e4097bb6.css.map": "/eduardo-profile/static/css/main.e4097bb6.css.map",
+    "main.ac610718.js.map": "/eduardo-profile/static/js/main.ac610718.js.map",
+    "787.7752bf65.chunk.js.map": "/eduardo-profile/static/js/787.7752bf65.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4097bb6.css",
+    "static/js/main.ac610718.js"
+  ]
+}
