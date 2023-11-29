@@ -3,6 +3,10 @@ import { iconsData } from "../constants";
 
 export default function Footer() {
 
+
+  const fill = 1
+  fill = 2
+  
   return (
     <div className="bg-primary">
       <div className="container flex flex-col items-center	a py-6">
